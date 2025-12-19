@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.topbar {
+    background: #4fc3f7;
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #b3e5fc;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar p {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 8px;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.income { background: #81c784; }
+.expense { background: #e57373; }
+.balance { background: #64b5f6; }
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+    text-align: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="topbar"><h1>💸 Expense Tracker</h1></div>
+
+<div class="sidebar">
+    <p onclick="toggleProfile()">👤 Profile</p>
+    <p onclick="location.href='edit-profile.html'">✏️ Edit Profile</p>
+    <p onclick="changePassword()">🔐 Change Password</p>
+    <p onclick="logout()">🚪 Logout</p>
+</div>
+
+<div class="profile" id="profile">
+    <img id="profilePic" src="https://via.placeholder.com/100" alt="Profile Photo">
+    <canvas id="profileGraph" width="150" height="150"></canvas>
+    <h3 id="pname"></h3>
+    <p id="pemail"></p>
+    <p>Salary: ₹<span id="psalary"></span></p>
+</div>
+
+<div class="content">
+    <div class="cards">
+        <div class="card income">💰 Income<br>₹<span id="income"></span></div>
+        <div class="card expense">💸 Expense<br>₹<span id="expense"></span></div>
+        <div class="card balance">💳 Balance<br>₹<span id="balance"></span></div>
+    </div>
+
+    <div class="add-expense">
+        <h3>Add Expense</h3>
+        <select id="categorySelect" onchange="checkOther()">
+            <option value="">Select Category</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Education</option>
+            <option>Health</option>
+            <option>Other</option>
+        </select>
+        <input type="text" id="otherPurpose" placeholder="Enter Purpose" style="display:none;">
+        <input type="number" id="amountInput" placeholder="Amount">
+        <input type="date" id="expenseDate">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <h2>Past Expense History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Purpose</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+    </table>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

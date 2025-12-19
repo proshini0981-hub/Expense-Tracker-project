@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-container {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.edit-container h2 {
+    color: #0288d1;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.edit-container input[type="text"],
+.edit-container input[type="number"],
+.edit-container input[type="file"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #90caf9;
+    font-size: 14px;
+}
+
+.edit-container input:focus {
+    outline: none;
+    border-color: #0288d1;
+    box-shadow: 0 0 5px rgba(2, 136, 209, 0.4);
+}
+
+.edit-container button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #4fc3f7, #0288d1);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-container button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(2, 136, 209, 0.4);
+}
+
+.back-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #0288d1;
+    font-size: 14px;
+}
+

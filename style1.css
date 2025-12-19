@@ -1,0 +1,41 @@
+input{
+  border-radius:20px;
+  padding:5px;
+  border-color:rgb(106, 169, 106);
+  background-color:rgba(0,0,255,0.1);
+  margin-top:10px
+}
+body{
+    background-color:rgb(249, 255, 235);
+    background-size: cover;
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(20, 45, 92);
+}
+button{
+  background-color:rgb(233, 220, 246);
+  border-radius:20px;
+  width:48%;
+  height: 37px;
+}
+button:hover{
+  background-color:rgb(112, 90, 170);
+}
+ div {
+            border:1px;
+            border-radius:20px;
+            height:600px;
+            background-position:center;
+            position: absolute;
+            margin-top:12px;
+            margin-left:550px;
+            width:25%;
+        }
+    label{
+            font-family: 'Arial Narrow Bold', sans-serif;
+            color:rgb(108, 48, 60)
+    }
+.sign{
+    background:linear-gradient(rgb(173, 218, 245),rgb(208, 201, 206));
+}

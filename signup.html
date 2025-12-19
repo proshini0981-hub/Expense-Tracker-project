@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <title>Sign up page</title>
+</head>
+
+<body style="text-align: center;">
+    <br><br><br>
+
+    <div class="sign">
+        <form onsubmit="signup(event)">
+            <h1>Sign up</h1>
+            <h3>
+
+                <label>Enter Your Name:</label><br>
+                <input type="text" id="name"><br><br>
+
+                <label>Enter Your Email:</label><br>
+                <input type="email" id="email"><br><br>
+
+                <label>Select Your Gender</label><br>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <br><br>
+
+                <!-- ✅ NEW FEATURE -->
+                <label>Enter Monthly Income:</label><br>
+                <input type="number" id="income" placeholder="Eg: 25000"><br><br>
+
+                <label>Set Password:</label><br>
+                <input type="password" id="password"><br><br>
+
+                <label>Retype Password:</label><br>
+                <input type="password" id="confirmPassword"><br><br>
+
+                <button type="submit">Register</button>
+
+                <p>
+                    Already have an account?
+                    <a href="index.html" style="text-decoration:none;">Login Here</a>
+                </p>
+
+            </h3>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
